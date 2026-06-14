@@ -106,11 +106,6 @@ const safetyHygiene = [
   'Educate family members, especially seniors, about common online scams and threats',
 ]
 
-const teamMembers = [
-  { name: 'Team Member 1', role: 'Frontend Developer / UI Design', avatar: 'TM' },
-  { name: 'Team Member 2', role: 'Backend & Data Architecture', avatar: 'TM' },
-  { name: 'Team Member 3', role: 'Content Research & Documentation', avatar: 'TM' },
-]
 
 export default function EmergencyHelp() {
   return (
@@ -243,102 +238,7 @@ export default function EmergencyHelp() {
           </motion.div>
         </section>
 
-        {/* About Section */}
-        <section id="about">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <div className="flex items-center gap-2 mb-2">
-              <Info className="w-5 h-5 text-cyber-accent" />
-              <h2 className="text-2xl font-bold text-white">About CyberSecurity Guard</h2>
-            </div>
-            <p className="text-cyber-muted mb-8">This project, developed as part of an IDT (Integrated Digital Transformation) course, aims to democratize cybersecurity education.</p>
 
-            {/* Project Objective */}
-            <div className="cyber-card mb-6">
-              <div className="flex items-center gap-2 mb-3">
-                <BookOpen className="w-4 h-4 text-cyber-accent" />
-                <h3 className="text-white font-semibold">Project Objective</h3>
-              </div>
-              <p className="text-cyber-muted text-sm leading-relaxed mb-4">
-                CyberSecurity Guard was built to address a critical gap in digital literacy: everyday internet users, especially seniors and beginners, face escalating cyber threats but lack access to simple, interactive educational resources. Traditional cybersecurity training is often too technical and inaccessible.
-              </p>
-              <p className="text-cyber-muted text-sm leading-relaxed">
-                Our platform provides five comprehensive learning modules, an interactive phishing simulator, a scenario-based quiz, and a real-time password analyzer — all designed for accessibility, clarity, and practical impact. The goal is to reduce successful cyberattacks through awareness, not just technology.
-              </p>
-            </div>
-
-            {/* Key Features */}
-            <div className="cyber-card mb-6">
-              <div className="flex items-center gap-2 mb-3">
-                <CheckCircle className="w-4 h-4 text-cyber-green" />
-                <h3 className="text-white font-semibold">What We Built</h3>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                {[
-                  'Interactive Learn Center with 5 core modules',
-                  'Phishing Simulator with 8 realistic scenarios',
-                  'Cyber Safety Quiz with 12 expert-level questions',
-                  'Real-time Password Strength Analyzer',
-                  'Emergency Incident Response Guide',
-                  'Cybercrime Reporting Resource Directory',
-                  'Fully responsive mobile & desktop design',
-                  'WCAG-compliant accessible UI',
-                ].map((feat, i) => (
-                  <div key={i} className="flex items-center gap-2 text-sm text-cyber-muted">
-                    <ChevronRight className="w-3.5 h-3.5 text-cyber-accent flex-shrink-0" />
-                    {feat}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Team */}
-            <div className="cyber-card mb-6">
-              <div className="flex items-center gap-2 mb-4">
-                <Users className="w-4 h-4 text-cyber-accent" />
-                <h3 className="text-white font-semibold">Team Members</h3>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {teamMembers.map((member, i) => (
-                  <div key={i} className="text-center bg-cyber-bg border border-cyber-border rounded-xl p-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyber-accent/30 to-purple-600/30 border border-cyber-accent/30 flex items-center justify-center mx-auto mb-3">
-                      <span className="text-cyber-accent font-bold text-sm terminal-text">{member.avatar}</span>
-                    </div>
-                    <p className="text-white font-medium text-sm">{member.name}</p>
-                    <p className="text-cyber-muted text-xs mt-0.5">{member.role}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Faculty Guide */}
-            <div className="cyber-card mb-6">
-              <div className="flex items-center gap-2 mb-3">
-                <BookOpen className="w-4 h-4 text-cyber-yellow" />
-                <h3 className="text-white font-semibold">Faculty Guide</h3>
-              </div>
-              <div className="bg-cyber-bg border border-cyber-border rounded-xl p-4">
-                <p className="text-white font-medium">Faculty Name</p>
-                <p className="text-cyber-muted text-sm">Department of [Your Department]</p>
-                <p className="text-cyber-muted text-sm">[Your Institution Name]</p>
-              </div>
-            </div>
-
-            {/* Tech Stack */}
-            <div className="cyber-card">
-              <div className="flex items-center gap-2 mb-3">
-                <Laptop className="w-4 h-4 text-cyber-muted" />
-                <h3 className="text-white font-semibold">Tech Stack</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['React.js', 'Vite', 'Tailwind CSS', 'React Router', 'Framer Motion', 'Lucide React', 'Vercel'].map(tech => (
-                  <span key={tech} className="bg-cyber-bg border border-cyber-border rounded-lg px-3 py-1.5 text-cyber-accent text-xs terminal-text">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-        </section>
 
         {/* Footer Note */}
         <div className="text-center py-6 border-t border-cyber-border">
