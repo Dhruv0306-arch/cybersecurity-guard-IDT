@@ -11,7 +11,7 @@ export const learnModules = [
     badgeVariant: 'red',
     title: 'Phishing Attacks',
     summary: 'Deceptive messages designed to steal your personal information.',
-    videoUrl: 'https://www.youtube.com/embed/Y7zNaCwwcQU',
+    videoUrl: 'https://www.youtube.com/embed/XBkzBrXlle0',
     description: `Phishing is a cybercrime where attackers disguise themselves as trusted entities — like your bank, Google, or a colleague — to trick you into revealing sensitive information such as passwords, credit card numbers, or personal data.`,
     examples: [
       {
@@ -88,7 +88,7 @@ export const learnModules = [
     badgeVariant: 'default',
     title: 'Safe Browsing',
     summary: 'Navigate the web without falling into digital traps.',
-    videoUrl: 'https://www.youtube.com/embed/5EGbS949B3E',
+    videoUrl: 'https://www.youtube.com/embed/aO858HyFbKI',
     description: `The internet hosts billions of websites, and not all are trustworthy. Malicious websites can steal your data, install malware, or trick you into handing over sensitive information. Practicing safe browsing habits dramatically reduces your risk.`,
     examples: [
       {
@@ -127,7 +127,7 @@ export const learnModules = [
     badgeVariant: 'green',
     title: 'Public Wi-Fi Safety',
     summary: 'Free Wi-Fi comes with hidden costs to your privacy.',
-    videoUrl: 'https://www.youtube.com/embed/l2wQ2_B271A',
+    videoUrl: 'https://www.youtube.com/embed/_GzE99AmAQU',
     description: `Public Wi-Fi at cafés, airports, and hotels is convenient but dangerous. These open networks can allow attackers to intercept your data using "man-in-the-middle" attacks. Your banking details, passwords, and private messages could all be captured without your knowledge.`,
     examples: [
       {
@@ -161,7 +161,7 @@ export const learnModules = [
     badgeVariant: 'purple',
     title: 'Social Engineering',
     summary: 'Hackers exploit human trust, not just software vulnerabilities.',
-    videoUrl: 'https://www.youtube.com/embed/3AONB819EEY',
+    videoUrl: 'https://www.youtube.com/embed/ULGILG-ZhO0',
     description: `Social engineering is the art of manipulating people into revealing confidential information. Unlike hacking software, these attacks target human psychology — exploiting trust, fear, urgency, or authority. It's the most effective attack vector because humans are often the weakest link in security.`,
     examples: [
       {
