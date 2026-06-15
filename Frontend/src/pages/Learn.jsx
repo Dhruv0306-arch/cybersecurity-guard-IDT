@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, ChevronUp, AlertTriangle, CheckCircle, Lightbulb, BookOpen } from 'lucide-react'
+import { ChevronDown, ChevronUp, AlertTriangle, CheckCircle, Lightbulb, BookOpen, Video } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import Badge from '../components/Badge'
 import { learnModules } from '../data/learnData'
@@ -59,6 +59,25 @@ function ModuleCard({ module, index }) {
             <div className="px-6 pb-6 border-t border-cyber-border pt-5 space-y-6">
               {/* Description */}
               <p className="text-cyber-muted leading-relaxed">{module.description}</p>
+
+              {/* Video Player */}
+              {module.videoUrl && (
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Video className="w-4 h-4 text-cyber-accent" />
+                    <h4 className="text-white font-semibold text-sm uppercase tracking-wide">Educational Video</h4>
+                  </div>
+                  <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-cyber-border">
+                    <iframe
+                      src={module.videoUrl}
+                      title={`${module.title} Video`}
+                      className="absolute inset-0 w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              )}
 
               {/* Real-Life Examples */}
               <div>
